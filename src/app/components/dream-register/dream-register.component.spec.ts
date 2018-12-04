@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BotonSalidaComponent } from './boton-salida.component';
+import { DreamRegisterComponent } from './dream-register.component';
 
-describe('BotonSalidaComponent', () => {
-  let component: BotonSalidaComponent;
-  let fixture: ComponentFixture<BotonSalidaComponent>;
+describe('DreamRegisterComponent', () => {
+  let component: DreamRegisterComponent;
+  let fixture: ComponentFixture<DreamRegisterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BotonSalidaComponent ]
+      declarations: [ DreamRegisterComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BotonSalidaComponent);
+    fixture = TestBed.createComponent(DreamRegisterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

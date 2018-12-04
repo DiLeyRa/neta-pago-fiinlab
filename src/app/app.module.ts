@@ -12,18 +12,12 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { environment } from '../environments/environment';
-
-// import { RegisterComponent } from './register/register.component';
+import { RegisterComponent } from './components/register/register.component';
 import { AuthGuard } from './shared/auth.guard';
 import { AuthService } from './shared/auth.service';
-
 import { UserResolver } from './shared/user.resolver';
 import { UserService } from './shared/user.service';
-import { MuroComponent } from './components/muro/muro.component';
-
-
 import { NgxQRCodeModule } from 'ngx-qrcode2';
-
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { StartComponent } from './components/start/start.component';
@@ -33,21 +27,30 @@ import { ConfirmationComponent } from './components/confirmation/confirmation.co
 import { SubmitComponent } from './components/submit/submit.component';
 import { Submit2Component } from './components/submit2/submit2.component';
 import { FirstPageComponent } from './components/first-page/first-page.component';
-import { BotonSalidaComponent } from './boton-salida/boton-salida.component';
+
+import { DreamComponent } from './components/dream/dream.component';
+import { DreamRegisterComponent } from './components/dream-register/dream-register.component';
+import { DreamStatusComponent } from './components/dream-status/dream-status.component';
+import { BotonsalidaComponent } from './components/botonsalida/botonsalida.component';
+// import { NavbarComponent } from './components/navbar/navbar.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    MuroComponent,
+    RegisterComponent,
     StartComponent,
     CodeQrComponent,
     ConfirmationComponent,
     SubmitComponent,
     Submit2Component,
     FirstPageComponent,
-    BotonSalidaComponent
+    DreamComponent,
+    DreamRegisterComponent,
+    DreamStatusComponent,
+    BotonsalidaComponent,
   ],
   imports: [
     BrowserModule,
