@@ -15,11 +15,12 @@ import { DreamStatusComponent } from './components/dream-status/dream-status.com
 
 import { AuthGuard } from './shared/auth.guard'; // p
 import { UserResolver } from './shared/user.resolver'; // p
+
+// import { MuroComponent } from './components/muro/muro.component';
+
 // import { UserComponent } from './user/user.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
-
-
 
 
 const routes: Routes = [
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent, canActivate: [AuthGuard] }, // p
   { path: 'first-page', component: FirstPageComponent, resolve: { data: UserResolver } },
   { path: 'register', component: RegisterComponent}
+
    // {path: 'first-page', component: FirstPageComponent}
 
 ];
