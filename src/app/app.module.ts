@@ -33,6 +33,7 @@ import { ConfirmationComponent } from './components/confirmation/confirmation.co
 import { SubmitComponent } from './components/submit/submit.component';
 import { Submit2Component } from './components/submit2/submit2.component';
 import { FirstPageComponent } from './components/first-page/first-page.component';
+import { BotonSalidaComponent } from './boton-salida/boton-salida.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { FirstPageComponent } from './components/first-page/first-page.component
     ConfirmationComponent,
     SubmitComponent,
     Submit2Component,
-    FirstPageComponent
+    FirstPageComponent,
+    BotonSalidaComponent
   ],
   imports: [
     BrowserModule,
